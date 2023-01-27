@@ -1,6 +1,8 @@
 # LabMAD
 This application consist of Lab Assignment 3 and Lab exercises
 
+File above contain android studio project also php file used in the project with the apk
+
 First menu is Student Registration where it will ask the details of student and save to remote database xampp via rest API and sqlite database.
 
 Second menu is List of Student where the all student details will be display by ViewHolder where the data taken from the database sqlite.

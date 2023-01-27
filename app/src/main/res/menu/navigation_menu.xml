@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_registration_activity"
+        android:icon="@drawable/baseline_app_registration_24"
+        android:title="Student Registration" />
+
+    <item
+        android:id="@+id/nav_list_student"
+        android:icon="@drawable/baseline_view_list_24"
+        android:title="List of Students" />
+
+    <item
+        android:id="@+id/nav_search_student"
+        android:icon="@drawable/baseline_person_search_24"
+        android:title="Search Student" />
+    <item
+        android:id="@+id/nav_get_api"
+        android:icon="@drawable/baseline_phone_android_24"
+        android:title="GetRESTAPI" />
+    <item
+        android:id="@+id/nav_first_act"
+        android:icon="@drawable/baseline_camera_alt_24"
+        android:title="First Activity" />
+    <item
+        android:id="@+id/nav_user_interaction"
+        android:icon="@drawable/baseline_person_outline_24"
+        android:title="User Interaction" />
+    <item
+        android:id="@+id/nav_get_external_image"
+        android:icon="@drawable/baseline_image_24"
+        android:title="Get External Image" />
+</menu>

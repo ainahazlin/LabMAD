@@ -1,0 +1,108 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstActivity">
+
+        <EditText
+            android:id="@+id/edtTxtName"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/btnMe"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.394"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <EditText
+            android:id="@+id/edtYear"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Year Of Birth"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/btnMe"
+            app:layout_constraintEnd_toEndOf="@+id/edtTxtName"
+            app:layout_constraintStart_toStartOf="@+id/edtTxtName"
+            app:layout_constraintTop_toBottomOf="@+id/edtTxtName" />
+
+        <TextView
+            android:id="@+id/txtvwAge"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="392dp"
+            android:gravity="center"
+            android:text="This is First Activity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <Button
+            android:id="@+id/btnMe"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="443dp"
+            android:onClick="fnGreet"
+            android:text="ClickMe!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="edtTxtName"
+            tools:layout_editor_absoluteY="59dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="edtYear"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <Button
+            android:id="@+id/btnSecondAct"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="334dp"
+            android:onClick="fnThreadActivity"
+            android:text="Camera Activity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <ImageView
+            android:id="@+id/Viewcapturedimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSecondAct"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
